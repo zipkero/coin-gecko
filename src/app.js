@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Router from './Router';
+import Router from './router';
 
 const Wrapper = styled.div`
   min-width: 1000px;
