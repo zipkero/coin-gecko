@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Router from './router';
+import {Provider} from 'react-redux';
+import store from './module';
 
 const Wrapper = styled.div`
   min-width: 1000px;
@@ -11,9 +13,11 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-      <Wrapper>
-        <Router/>
-      </Wrapper>
+      <Provider store={store}>
+        <Wrapper>
+          <Router/>
+        </Wrapper>
+      </Provider>
   );
 }
 

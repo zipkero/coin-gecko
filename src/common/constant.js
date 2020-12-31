@@ -9,7 +9,7 @@ export const listOptions = [
   },
 ];
 
-export const pageOptions = [
+export const pageSizeOptions = [
   {value: '10', label: '10개 보기'},
   {value: '30', label: '30개 보기'},
   {value: '50', label: '50개 보기'},
@@ -25,3 +25,9 @@ export const moneyOptions = [
     label: 'USD',
   },
 ];
+
+export const moneyPrefix = {
+  'USD': '$',
+  'KRW': '₩',
+
+};

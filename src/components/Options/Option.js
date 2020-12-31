@@ -12,10 +12,10 @@ const OptionBox = styled.div`
   }
 `;
 
-function Option({options}) {
+function Option({value, options, onChange}) {
   return (
       <OptionBox>
-        <select defaultValue={options.find((o) => o.selected === true)?.value}>
+        <select onChange={onChange} defaultValue={value}>
           {options &&
           options.map(
               (o) => <option key={o.value} value={o.value}>{o.label}</option>)}
